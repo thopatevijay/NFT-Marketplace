@@ -52,7 +52,7 @@ export default function Marketplace() {
                     Top NFTs
                 </div>
                 <div className="flex mt-5 justify-between flex-wrap max-w-screen-xl text-center">
-                {!data.map((value, index) => {
+                {data.map((value, index) => {
                     return <NFTTile data={value} key={index}></NFTTile>;
                 })}
             </div>
